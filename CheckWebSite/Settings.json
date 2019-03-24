@@ -1,0 +1,23 @@
+{
+   "webSites":[
+      {
+         "url":"https://ya.ru",
+         "timeOut":120,
+         "phrasesAllowed":[
+            "Yandex"
+         ],
+         "phrasesNotAllowed":[
+         ]
+      }
+   ],
+   "mail":{
+      "host":"smtp_server_name",
+      "port":25,
+      "useSsl":false,
+      "login":"",
+      "password":"",
+      "from":"",
+      "to":"",
+      "subject": "Web Site Monitoring Error"
+   }
+}

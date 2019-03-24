@@ -1,0 +1,19 @@
+{
+   "connections":[
+      {
+         "name":"Local Web Server",
+         "address":"127.0.0.1",
+         "port":80
+      }
+   ],
+   "mail":{
+      "host":"smtp_server_name",
+      "port":25,
+      "useSsl":false,
+      "login":"",
+      "password":"",
+      "from":"",
+      "to":"",
+      "subject": "Tcp Connection Monitoring Error"
+   }
+}
