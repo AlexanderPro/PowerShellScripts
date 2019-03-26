@@ -1,6 +1,6 @@
 function GetLogFileName()
 {
-    $directoryName = "c:\Resources\CheckWebSite"
+    $directoryName = Split-Path $script:MyInvocation.MyCommand.Path
     $fileName = Get-Date -format "yyyyMMdd"
     $fileName = $fileName + ".log"
     $directoryName = Join-Path $directoryName -ChildPath "Logs"
@@ -40,7 +40,7 @@ function Main()
     try
     {
         $settingsFileName = "Settings.json"
-        $directoryName = "c:\Resources\CheckWebSite"
+        $directoryName = Split-Path $script:MyInvocation.MyCommand.Path
         $settingsFileName = Join-Path $directoryName -ChildPath $settingsFileName
         $settings = Get-Content -Raw -Path $settingsFileName | ConvertFrom-Json
         foreach($webSite in $settings.webSites)
